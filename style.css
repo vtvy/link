@@ -21,7 +21,6 @@
     transition: all 0.2s, box-shadow 0.08s ease-in;
     user-select: none;
     -webkit-user-select: none;
-    width: 100%;
 }
 
 .btn:disabled {
@@ -57,4 +56,7 @@
 }
 #nhu {
     background-color: #b415b4;
+}
+#hacker {
+    background-color: #06e63e;
 }
