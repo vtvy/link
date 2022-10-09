@@ -25,8 +25,13 @@
 
         <script type="text/javascript">
             document.getElementById("nckh").onclick = function () {
-                location.href =
-                    "https://spzg-my.sharepoint.com/:f:/g/personal/votrieuvy1661_spzg_onmicrosoft_com/Ej5RsLwxT4tJm4X3LjJN5g8BmweTFolfsd9771D92D31cg?e=Udlrnb";
+                let pass = prompt("Please enter pass");
+                if (pass == 1234) {
+                    location.href =
+                        "https://1drv.ms/u/s!AvVEH9IRPYRzigL_0C8vlmBsYpN5?e=5Jl0aW";
+                } else {
+                    alert("Please try other link!");
+                }
             };
 
             document.getElementById("ielts").onclick = function () {
