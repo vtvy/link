@@ -22,6 +22,7 @@
         <button class="btn" role="button" id="book">BOOK</button>
         <button class="btn" role="button" id="nhu">NHN</button>
         <button class="btn" role="button" id="hacker">Hacker</button>
+        <button class="btn" role="button" id="foss">Foss</button>
 
         <script type="text/javascript">
             document.getElementById("nckh").onclick = function () {
@@ -57,6 +58,15 @@
             document.getElementById("hacker").onclick = function () {
                 location.href =
                     "https://spzg-my.sharepoint.com/:f:/g/personal/vtvy1661_votri_onmicrosoft_com/EkI-6uSpaWJBt1j1FlieQ1IB6N_lTRs_2_JllSeWaE8pUw?e=cCgL1R";
+            };
+            document.getElementById("foss").onclick = function () {
+                let pass = prompt("Please enter pass");
+                if (pass == 1234) {
+                    location.href =
+                        "https://1drv.ms/u/s!AvVEH9IRPYRzigOlunc3mJ_okpuf?e=zglVeA";
+                } else {
+                    alert("Please try other link!");
+                }
             };
         </script>
     </body>
