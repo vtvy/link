@@ -22,6 +22,10 @@
         <button class="btn" role="button" id="book">BOOK</button>
         <button class="btn" role="button" id="nhu">NHN</button>
         <button class="btn" role="button" id="hacker">Không làm mà vẫn</button>
+        <button class="btn" role="button" id="hacker2" onclick="getHello()">
+            Click me please
+        </button>
+
         <!-- <button class="btn" role="button" id="foss">Foss</button> -->
 
         <script type="text/javascript">
@@ -34,6 +38,14 @@
             //         alert("Please try other link!");
             //     }
             // };
+            var getHello = async () => {
+                const response = await fetch(
+                    "https://sport-shop-api.azurewebsites.net"
+                )
+                    .then((r) => r.text())
+                    .catch((err) => err);
+                document.getElementById("hacker2").textContent = response;
+            };
 
             document.getElementById("dotnet").onclick = function () {
                 location.href =
